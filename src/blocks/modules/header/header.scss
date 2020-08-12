@@ -28,6 +28,50 @@
     padding-right: 35px;
 }
 
+.header-burger {
+    position: absolute;
+    top: 4.5%;
+    left: 25.3%;
+    cursor: pointer;
+
+    .burger-one {
+        background-color: white;
+        width: 40px;
+        height: 1px;
+        margin-bottom: 8px;
+    }
+
+    .burger-two {
+        background-color: white;
+        width: 25px;
+        height: 1px;
+        margin-bottom: 8px;
+    }
+
+    .burger-three {
+        background-color: white;
+        width: 40px;
+        height: 1px;
+    }
+
+    &:hover {
+        .burger-one {
+            background-color: $hover;
+            transition: 0.2s ease;
+        }
+    
+        .burger-two {
+            background-color: $hover;
+            transition: 0.2s ease;
+        }
+    
+        .burger-three {
+            background-color: $hover;
+            transition: 0.2s ease;
+        }
+    }
+}
+
 .slick-dots {
     display: flex;
     position: absolute;
