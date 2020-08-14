@@ -14,6 +14,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.wrapper {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 input[type='range'] {
     width: 362px;
     -webkit-appearance: none;
@@ -52,17 +60,18 @@ input[type="range"]::-ms-fill-upper {
     background-color: #9a905d;
 }
 
-.input {
+.input-one,
+.input-two {
     position: relative;
     width: 362px;
 }
 
 .zero-scale {
     position: absolute;
-    font-size: 16px;
+    font-size: 1.33rem;
 }
 
-.kvadrat {
+.square {
     position: absolute;
     width: 6px;
     height: 6px;
@@ -75,5 +84,313 @@ input[type="range"]::-ms-fill-upper {
     position: absolute;
     right: -17px;
     bottom: -37px;
-    font-size: 16px;
+    font-size: 1.33rem;
+}
+
+.section-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    .input-fields {
+        display: flex;
+    }
+    .select-fields {
+        padding-bottom: 30px;
+    }
+
+    #object-type,
+    #living-area {
+        width: 320px;
+        height: 60px;
+        font-size: 1.33rem;
+        margin-right: -4px;
+        border: 1px solid $black;
+        &:active {
+            border: 1px solid $hover;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.section-slider-one {
+    padding-top: 140px;
+    padding-bottom: 143px;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding-bottom: 10px;
+        line-height: 60px;
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    &__line {
+        width: 1309px;
+        height: 1px;
+        background-color: #c0c0c1;
+        margin-bottom: 43px;
+    }
+
+    .slider-one {
+        display: flex;
+        justify-content: space-between;
+        &-main-first {
+            background-image: url(../img/home-image-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            height: 415px;
+            &__item {
+                margin-left: 32px;
+                margin-bottom: 41px;
+                .img-like {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 67px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            }
+            &__title {
+                margin: 0;
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+            }
+            &__description {
+                color: white;
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 10px;
+                margin: 0;
+            }
+        }
+        &-main-second {
+            background-image: url(../img/home-image-2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            height: 415px;
+            &__item {
+                margin-left: 32px;
+                margin-bottom: 41px;
+                .img-like {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 101px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            }
+            &__title {
+                margin: 0;
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+            }
+            &__description {
+                color: white;
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 10px;
+                margin: 0;
+            }
+        }
+        &-main-third {
+            background-image: url(../img/home-image-3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            height: 415px;
+            &__item {
+                margin-left: 32px;
+                margin-bottom: 41px;
+                .img-like {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 91px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            }
+            &__title {
+                margin: 0;
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+            }
+            &__description {
+                color: white;
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 10px;
+                margin: 0;
+            }
+        }
+        &-info {
+            display: flex;
+            padding-left: 38px;
+            padding-top: 19px;
+            &__item {
+                display: flex;
+                padding-right: 34px;
+                .slider-one-info-text {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 0;
+                }
+                .text-one {
+                    padding-left: 10px;
+                }
+                .text-two {
+                    padding-left: 10px;
+                }
+                .text-three {
+                    padding-left: 12px;
+                }
+            }
+        }
+        &__child {
+            width: 463px;
+            height: 545px;
+            border: 1px solid black;
+        }
+        &-price {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 60px;
+            margin: 0;
+            padding-left: 33px;
+        }
+    }
+}
+
+.section-city-house {
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        font-size: 40px;
+        padding-bottom: 28px;
+        line-height: 60px;
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 82px;
+        margin: 0;
+    }
+    .catalog {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 42px;
+        &-item {
+            width: 465px;
+            height: 545px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            &-main-one {
+                background-image: url(../img/city-house-1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                height: 415px;
+                &__item {
+                    margin-left: 32px;
+                    margin-bottom: 41px;
+                
+                }
+                &__title {
+                    margin: 0;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                }
+                &__description {
+                    color: white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-top: 10px;
+                    margin: 0;
+                }
+                .img-like-catalog {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 96px;
+                    margin-bottom: 43px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            } 
+            &-info {
+                display: flex;
+                padding-left: 33px;
+                padding-top: 14px;
+                &__item {
+                    display: flex;
+                    padding-right: 34px;
+                    .catalog-item-info-text {
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-bottom: 0;
+                    }
+                    .text-one {
+                        padding-left: 10px;
+                    }
+                    .text-two {
+                        padding-left: 10px;
+                    }
+                    .text-three {
+                        padding-left: 12px;
+                    }
+                }
+            }
+            &__child {
+                width: 463px;
+                height: 545px;
+                border: 1px solid black;
+            }
+            &-price {
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 60px;
+                margin: 0;
+                padding-left: 33px;
+                padding-top: 7px;
+            }
+        }
+    }
 }

@@ -31,15 +31,15 @@
     </head>
     <body>
         @@include("../blocks/modules/header/header.html") 
+        <div class="wrapper">
         <section class="section-filters">
-            <div>
+            <div class="select-fields">
                 <select name="object-type" id="object-type">
                     <option disabled selected>Тип объекта</option>
                     <option>Загородные дома</option>
                     <option>Городские квартиры</option>
                 </select>
-            </div>
-            <div>
+
                 <select name="living-area" id="living-area">
                     <option disabled selected>Район</option>
                     <option>Верх-Исетский район</option>
@@ -47,21 +47,244 @@
                     <option>Чкаловский район</option>
                 </select>
             </div>
-            <div>
-                <label>Площадь</label>
-                <input type="text" placeholder="_________">
+            <div class="input-fields">
+                <div class="input-fields-item">
+                    <label>Площадь</label>
+                    <input type="text" placeholder="_________">
+                    <div class="input-one">
+                        <p class="zero-scale">0</p>
+                        <div class="square"></div>
+                        <input type="range" min="0" max="1000" step="1" value="120"> 
+                        <p class="final-scale">1000</p>
+                    </div>
+                </div>
+                <div class="input-fields-item">
+                    <label>Цена за м2</label>
+                    <input type="text" placeholder="_________">
+                    <div class="input-two">
+                        <p class="zero-scale">0</p>
+                        <div class="square"></div>
+                        <input type="range" min="0" max="98000" step="1" value="10350"> 
+                        <p class="final-scale">98000</p>
+                    </div>
+                </div>
+        </section>
+        <section class="section-slider-one">
+            <div class="section-slider-one__title">
+                <h2>Загородные дома</h2>
+                <p class="section-slider-one__description">Наши дома расположились в уютных районах Екатеринбурга:<br>Верх-Исетский район, Железнодорожный район, Чкаловский район.</p>
             </div>
-            <div>
-                <label>Цена за м2</label>
-                <input type="text" placeholder="_________">
-            </div>
-            <div class="input">
-                <p class="zero-scale">0</p>
-                <div class="kvadrat"></div>
-                <input type="range" min="0" max="1000" step="1" value="120"> 
-                <p class="final-scale">1000</p>
+            <div class="section-slider-one__line"></div>
+            <div class="slider-one">
+                <div class="slider-one__child">
+                    <div class="slider-one-main-first">
+                            <div class="slider-one-main-first__item">
+                            <p class="slider-one-main-first__title">Дом “Брусника”</p>
+                            <p class="slider-one-main-first__description">ул. Карла Маркса, 60, Екатеринбург</p>
+                        </div>
+                        <div class="slider-one-main-first__item">
+                            <img class="img-like" src="../img/like.svg" alt="Like">
+                        </div>
+                    </div>
+                    <div class="slider-one-info">
+                        <div class="slider-one-info__item">
+                            <img src="../img/home.svg" alt="home">
+                            <p class="slider-one-info-text text-one">200 м2</p>
+                        </div>
+                        <div class="slider-one-info__item">
+                            <img src="../img/area.svg" alt="area">
+                            <p class="slider-one-info-text text-two">10 сот</p>
+                        </div>
+                        <div class="slider-one-info__item">
+                            <img src="../img/drill.svg" alt="Drill">
+                            <p class="slider-one-info-text text-three">с отделкой</p>
+                        </div>
+                    </div>
+                    <p class="slider-one-price">7 005 456 500 ₽</p>
+                </div>
+                <div class="slider-one__child">
+                    <div class="slider-one-main-second">
+                            <div class="slider-one-main-second__item">
+                            <p class="slider-one-main-second__title">Дом “Трендис”</p>
+                            <p class="slider-one-main-second__description">ул. Урицкого, 13, Екатеринбург</p>
+                        </div>
+                        <div class="slider-one-main-second__item">
+                            <img class="img-like" src="../img/like.svg" alt="Like">
+                        </div>
+                    </div>
+                    <div class="slider-one-info">
+                        <div class="slider-one-info__item">
+                            <img src="../img/home.svg" alt="home">
+                            <p class="slider-one-info-text text-one">500 м2</p>
+                        </div>
+                        <div class="slider-one-info__item">
+                            <img src="../img/area.svg" alt="area">
+                            <p class="slider-one-info-text text-two">12 сот</p>
+                        </div>
+                        <div class="slider-one-info__item">
+                            <img src="../img/drill.svg" alt="Drill">
+                            <p class="slider-one-info-text text-three">с отделкой</p>
+                        </div>
+                    </div>
+                    <p class="slider-one-price">10 000 234 500 ₽</p>
+                </div>
+                <div class="slider-one__child">
+                    <div class="slider-one-main-third">
+                            <div class="slider-one-main-third__item">
+                            <p class="slider-one-main-third__title">Дом “Панорома”</p>
+                            <p class="slider-one-main-third__description">ул. Толстого, 340, Екатеринбург</p>
+                        </div>
+                        <div class="slider-one-main-third__item">
+                            <img class="img-like" src="../img/like.svg" alt="Like">
+                        </div>
+                    </div>
+                    <div class="slider-one-info">
+                        <div class="slider-one-info__item">
+                            <img src="../img/home.svg" alt="home">
+                            <p class="slider-one-info-text text-one">150 м2</p>
+                        </div>
+                        <div class="slider-one-info__item">
+                            <img src="../img/area.svg" alt="area">
+                            <p class="slider-one-info-text text-two">13 сот</p>
+                        </div>
+                        <div class="slider-one-info__item">
+                            <img src="../img/drill.svg" alt="Drill">
+                            <p class="slider-one-info-text text-three">с отделкой</p>
+                        </div>
+                    </div>
+                    <p class="slider-one-price">5 045 000 500 ₽</p>
+                </div>
             </div>
         </section>
+        <section class="section-city-house">
+            <div class="section-city-house__title">
+                <h2>Городские квартиры</h2>
+                <p class="section-city-house__description">В каталоге квартир вы найдете актуальные планировки и цены.<br>Это те квартиры, которые есть в продаже сейчас.</p>
+            </div>
+            <div class="catalog">
+                <div class="catalog-item">
+                    <div class="catalog-item-main-one">
+                        <div class="catalog-item-main-one__item">
+                        <p class="catalog-item-main-one__title">Дом “Жуковка”</p>
+                        <p class="catalog-item-main-one__description">ул. Карла Маркса, 60, Екатеринбург</p>
+                    </div>
+                        <img class="img-like-catalog" src="../img/like.svg" alt="Like">
+                </div>
+                <div class="catalog-item-info">
+                    <div class="catalog-item-info__item">
+                        <img src="../img/home.svg" alt="home">
+                        <p class="catalog-item-info-text text-one">72 м2</p>
+                    </div>
+                    <div class="catalog-item-info__item">
+                        <img src="../img/drill.svg" alt="Drill">
+                        <p class="catalog-item-info-text text-three">с отделкой</p>
+                    </div>
+                </div>
+                <p class="catalog-item-price">3 006 435 500 ₽</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item-main-one">
+                        <div class="catalog-item-main-one__item">
+                        <p class="catalog-item-main-one__title">Дом “Парашют”</p>
+                        <p class="catalog-item-main-one__description">ул. Зорге, 160, Екатеринбург</p>
+                    </div>
+                        <img class="img-like-catalog" src="../img/like.svg" alt="Like">
+                </div>
+                <div class="catalog-item-info">
+                    <div class="catalog-item-info__item">
+                        <img src="../img/home.svg" alt="home">
+                        <p class="catalog-item-info-text text-one">112 м2</p>
+                    </div>
+                    <div class="catalog-item-info__item">
+                        <img src="../img/drill.svg" alt="Drill">
+                        <p class="catalog-item-info-text text-three">с отделкой</p>
+                    </div>
+                </div>
+                <p class="catalog-item-price">5 000 974 500 ₽</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item-main-one">
+                        <div class="catalog-item-main-one__item">
+                        <p class="catalog-item-main-one__title">Дом “Весна”</p>
+                        <p class="catalog-item-main-one__description">ул. Заречная, 120, Екатеринбург</p>
+                    </div>
+                        <img class="img-like-catalog" src="../img/like.svg" alt="Like">
+                </div>
+                <div class="catalog-item-info">
+                    <div class="catalog-item-info__item">
+                        <img src="../img/home.svg" alt="home">
+                        <p class="catalog-item-info-text text-one">100 м2</p>
+                    </div>
+                    <div class="catalog-item-info__item">
+                        <img src="../img/drill.svg" alt="Drill">
+                        <p class="catalog-item-info-text text-three">с отделкой</p>
+                    </div>
+                </div>
+                <p class="catalog-item-price">6 120 412 500 ₽</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item-main-one">
+                        <div class="catalog-item-main-one__item">
+                        <p class="catalog-item-main-one__title">Дом “Пионер”</p>
+                        <p class="catalog-item-main-one__description">ул. Карла Маркса, 120, Екатеринбург</p>
+                    </div>
+                        <img class="img-like-catalog" src="../img/like.svg" alt="Like">
+                </div>
+                <div class="catalog-item-info">
+                    <div class="catalog-item-info__item">
+                        <img src="../img/home.svg" alt="home">
+                        <p class="catalog-item-info-text text-one">90 м2</p>
+                    </div>
+                    <div class="catalog-item-info__item">
+                        <img src="../img/drill.svg" alt="Drill">
+                        <p class="catalog-item-info-text text-three">с отделкой</p>
+                    </div>
+                </div>
+                <p class="catalog-item-price">3 120 000 500 ₽</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item-main-one">
+                        <div class="catalog-item-main-one__item">
+                        <p class="catalog-item-main-one__title">Дом “Манхетен”</p>
+                        <p class="catalog-item-main-one__description">ул. Московская, 10, Екатеринбург</p>
+                    </div>
+                        <img class="img-like-catalog" src="../img/like.svg" alt="Like">
+                </div>
+                <div class="catalog-item-info">
+                    <div class="catalog-item-info__item">
+                        <img src="../img/home.svg" alt="home">
+                        <p class="catalog-item-info-text text-one">87 м2</p>
+                    </div>
+                    <div class="catalog-item-info__item">
+                        <img src="../img/drill.svg" alt="Drill">
+                        <p class="catalog-item-info-text text-three">с отделкой</p>
+                    </div>
+                </div>
+                <p class="catalog-item-price">6 000 456 000 ₽</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item-main-one">
+                        <div class="catalog-item-main-one__item">
+                        <p class="catalog-item-main-one__title">Дом “Дружба”</p>
+                        <p class="catalog-item-main-one__description">ул. Прашина, 60, Екатеринбург</p>
+                    </div>
+                        <img class="img-like-catalog" src="../img/like.svg" alt="Like">
+                </div>
+                <div class="catalog-item-info">
+                    <div class="catalog-item-info__item">
+                        <img src="../img/home.svg" alt="home">
+                        <p class="catalog-item-info-text text-one">50 м2</p>
+                    </div>
+                    <div class="catalog-item-info__item">
+                        <img src="../img/drill.svg" alt="Drill">
+                        <p class="catalog-item-info-text text-three">с отделкой</p>
+                    </div>
+                </div>
+                <p class="catalog-item-price">4 012 400 500 ₽</p>
+                </div>
+            </div>
+        </section>
+    </div>
         @@include("../blocks/modules/footer/footer.html")
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -72,8 +295,12 @@
                 autoplay: true,
                 autoplaySpeed: 4000,
             });
-            
         </script>
+        <script>
+           $( function() {
+    $("#object-type").selectmenu();
+  } );
+  </script>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>
