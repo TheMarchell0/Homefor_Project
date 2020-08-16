@@ -312,7 +312,7 @@ input[type="range"]::-ms-fill-upper {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding-bottom: 42px;
+        padding-bottom: 54px;
         &-item {
             width: 465px;
             height: 545px;
@@ -354,7 +354,192 @@ input[type="range"]::-ms-fill-upper {
                     cursor: pointer;
                     transition: 0.2s ease;
                 }
+            }
+            &-main-two {
+                background-image: url(../img/city-house-2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                height: 415px;
+                &__item {
+                    margin-left: 32px;
+                    margin-bottom: 41px;
+                
+                }
+                &__title {
+                    margin: 0;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                }
+                &__description {
+                    color: white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-top: 10px;
+                    margin: 0;
+                }
+                .img-like-catalog {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 96px;
+                    margin-bottom: 43px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            }
+            &-main-three {
+                background-image: url(../img/city-house-3.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                height: 415px;
+                &__item {
+                    margin-left: 32px;
+                    margin-bottom: 41px;
+                
+                }
+                &__title {
+                    margin: 0;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                }
+                &__description {
+                    color: white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-top: 10px;
+                    margin: 0;
+                }
+                .img-like-catalog {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 96px;
+                    margin-bottom: 43px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
             } 
+            &-main-four {
+                background-image: url(../img/city-house-4.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                height: 415px;
+                &__item {
+                    margin-left: 32px;
+                    margin-bottom: 41px;
+                
+                }
+                &__title {
+                    margin: 0;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                }
+                &__description {
+                    color: white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-top: 10px;
+                    margin: 0;
+                }
+                .img-like-catalog {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 96px;
+                    margin-bottom: 43px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            } 
+            &-main-five {
+                background-image: url(../img/city-house-5.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                height: 415px;
+                &__item {
+                    margin-left: 32px;
+                    margin-bottom: 41px;
+                
+                }
+                &__title {
+                    margin: 0;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                }
+                &__description {
+                    color: white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-top: 10px;
+                    margin: 0;
+                }
+                .img-like-catalog {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 96px;
+                    margin-bottom: 43px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            } 
+            &-main-six {
+                background-image: url(../img/city-house-6.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                height: 415px;
+                &__item {
+                    margin-left: 32px;
+                    margin-bottom: 41px;
+                
+                }
+                &__title {
+                    margin: 0;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                }
+                &__description {
+                    color: white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-top: 10px;
+                    margin: 0;
+                }
+                .img-like-catalog {
+                    background-color: #302d32;
+                    padding-top: 13px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    padding-bottom: 11px;
+                    margin-left: 96px;
+                    margin-bottom: 43px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            }   
             &-info {
                 display: flex;
                 padding-left: 33px;
@@ -390,6 +575,181 @@ input[type="range"]::-ms-fill-upper {
                 margin: 0;
                 padding-left: 33px;
                 padding-top: 7px;
+            }
+        }
+    }
+    .see-more-button {
+        display: flex;
+        justify-content: center;
+        opacity: 0.8;
+        transition: 0.2s ease;
+        padding-bottom: 141px;
+        &:hover {
+            opacity: 1;
+        }
+        .see-more-link {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 24px;
+            padding-right: 15px;
+            color: #302d32;
+        }
+    }
+}
+
+.section-plan {
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 40px;
+            padding-bottom: 19px;
+            line-height: 60px;
+        }
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 52px;
+        margin: 0;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .buttons-list {
+        display: flex;
+        &-item {
+            border: none;
+            background: none;
+            font-size: 18px;
+            line-height: 80px;
+            text-transform: uppercase;
+            padding: 0;
+            font-weight: bold;
+            letter-spacing: 3px;
+            opacity: 0.3;
+            transition: 0.2s ease;
+            margin-right: 60px;
+            margin-left: 60px;
+            margin-bottom: 34px;
+            &:first-child {
+                margin-left: 104px;
+            }
+            &:focus {
+                opacity: 1;
+                outline: none;
+            } 
+        }
+        &__line {
+            background-color: #282828;
+            height: 24px;
+            width: 1px;
+            margin-top: 30px;
+        }
+    }
+}
+
+.plan-map-img {
+    padding-bottom: 140px;
+}
+
+.section-about-company {
+    padding-bottom: 168px;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 28px;
+        h2 {
+            font-size: 40px;
+            padding-bottom: 19px;
+            line-height: 60px;
+        }
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 52px;
+        margin: 0;
+    }
+    .about-company-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .about-company-item {
+        display: flex;
+        flex-direction: column;
+        img {
+            align-self: center;
+            padding-bottom: 16px;
+        }
+        &__description {
+            font-size: 12px;
+            line-height: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+    }
+    .item-one {
+        padding-right: 10px
+    }
+    .item-two {
+        padding-right: 10px
+    }
+    .item-three {
+        padding-right: 10px
+    }
+    .item-four {
+        padding-right: 10px
+    }
+}
+
+.section-our-news {
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 40px;
+            padding-bottom: 19px;
+            line-height: 60px;
+        }
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 92px;
+        margin: 0;
+    }
+    .slider-two {
+        display: flex;
+        justify-content: space-between;
+        &__child {
+            width: 463px;
+            height: 399px;
+            border: 1px solid black;
+            .news-date {
+                margin: 0;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .news-description {
+                margin: 0;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .see-more-link {
+                font-size: 16px;
+                line-height: 24px;
+                padding-right: 15px;
+                color: rgb(48, 45, 50);
+                text-decoration: none;
             }
         }
     }
