@@ -1,0 +1,181 @@
+footer {
+    border-top: 1px solid #4c494d;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-part-one {
+    display: flex;
+    padding-top: 59px;
+    align-items: center;
+    padding-bottom: 27px;
+    img {
+        margin-right: 103px;
+    }
+   .footer-menu {
+    padding-top: 12px;
+    .nav {
+        display: flex;
+        margin-right: 375px;
+        .nav-item {
+            padding-right: 48px;
+            list-style-type: none;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+        .nav-link {
+            font-size: 1.33rem;
+            text-decoration: none;
+            color: $black;
+            line-height: 24px;
+            transition: 0.2s ease;
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+} 
+    .footer-tel {
+        text-decoration: none;
+        color: $black;
+        font-size: 34px;
+        font-weight: bold;
+        transition: 0.2s ease;
+        &:hover {
+            color: $hover;
+        }
+    }
+}
+
+  
+.footer-part-two {
+    display: flex;
+    justify-content: space-between;
+    .input {
+        &-title {
+            font-size: 16px;
+            line-height: 24px;
+            color: $black;
+            margin: 0;
+            padding-bottom: 9px;
+        }
+        input {
+            width: 530px;
+            height: 54px;
+            &:focus {
+                outline: none;
+            }
+            &::-webkit-input-placeholder {
+                color: #c0c3c6;
+                font-size: 16px;
+                padding-top: 9px;
+                padding-left: 24px;
+            }
+        }
+        .input-submit {
+            background-color: #302d32;
+            border: none;
+            color: white;
+            width: 222px;
+            height: 60px;
+            margin-left: -2px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.2s ease;
+            cursor: pointer;
+            &:hover {
+                background-color: $hover;
+            }
+            &__text {
+                padding-top: 6px;
+                padding-bottom: 10px;
+            }
+        }
+        &-footer {
+            font-size: 16px;
+            padding-top: 20px;
+            margin: 0;
+            color: $black;
+            opacity: 0.5;
+        }
+    }
+    &-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    &__item {
+        padding-left: 30px;
+        padding-top: 8px;
+    }
+    
+    &__vk {
+        background-image: url(../../../img/vk.svg);
+        background-size: 23px 18px;
+        background-color: $black;
+        &:hover {
+            background-color: $hover;
+            border: 2px solid $hover;
+        }
+    }
+    &__inst {
+        background-image: url(../../../img/instagram.svg);
+        background-size: 18px 18px;
+        background-color: $black;
+        &:hover {
+            border: 2px solid $hover;
+            background-color: $hover; 
+        }
+    }
+    &__fb {
+        background-image: url(../../../img/facebook-2.svg);
+        background-size: 23px 18px;
+        background-color: $black;
+        &:hover {
+            background-color: $hover;
+            border: 2px solid $hover;
+        }
+    }
+    &__link {
+        width: 48px;
+        height: 48px;
+        border: 2px solid $black;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center center;
+        opacity: 0.8;
+        transition: 0.2s ease;
+    }
+}
+}
+
+.footer-part-three {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 64px;
+    &__copy {
+        color: #979698;
+    }
+    &__text {
+        color: #979698;
+    }
+    &__link {
+        text-decoration: none;
+        color: #979698;
+        transition: 0.2s ease;
+        &:hover {
+            color: $black;
+        }
+    }
+}

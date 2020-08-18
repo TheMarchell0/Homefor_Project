@@ -583,7 +583,7 @@ input[type="range"]::-ms-fill-upper {
         justify-content: center;
         opacity: 0.8;
         transition: 0.2s ease;
-        padding-bottom: 141px;
+        margin-bottom: 141px;
         &:hover {
             opacity: 1;
         }
@@ -654,6 +654,7 @@ input[type="range"]::-ms-fill-upper {
 
 .plan-map-img {
     padding-bottom: 140px;
+    width: 100%;
 }
 
 .section-about-company {
@@ -710,6 +711,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .section-our-news {
+    padding-bottom: 198px;
     &__title {
         display: flex;
         flex-direction: column;
@@ -734,6 +736,31 @@ input[type="range"]::-ms-fill-upper {
             width: 463px;
             height: 399px;
             border: 1px solid black;
+            overflow: hidden;
+            &:hover {
+                .see-more-link {
+                    color: $white;
+                }
+                color: $white;
+                .background-image {
+                    transform: translate(0,0);
+                }
+            }
+            .background-image {
+                background-image: url(../img/slider-two-background.png);
+                width: 463px;
+                height: 399px;
+                position: absolute;
+                z-index: -1;
+                transform: translate(0, 399px);
+                transition: 0.2s ease;
+            }
+            &-content {
+                position: absolute;
+                overflow: hidden;
+                width: 463px;
+                height: 399px;
+            }
             .news-date {
                 margin: 0;
                 font-size: 12px;
