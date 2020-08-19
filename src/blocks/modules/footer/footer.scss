@@ -14,7 +14,7 @@ footer {
     display: flex;
     padding-top: 59px;
     align-items: center;
-    padding-bottom: 27px;
+    padding-bottom: 19px;
     img {
         margin-right: 103px;
     }
@@ -65,20 +65,29 @@ footer {
             color: $black;
             margin: 0;
             padding-bottom: 9px;
+            padding-top: 9px;
         }
         input {
             width: 530px;
             height: 54px;
+            transition: 0.2s ease;
+            border: 1px solid $black;
             &:focus {
                 outline: none;
+                border: 1px solid $hover;
             }
             &::-webkit-input-placeholder {
                 color: #c0c3c6;
                 font-size: 16px;
                 padding-top: 9px;
-                padding-left: 24px;
             }
         }
+        INPUT[type="text"] {
+            color: $black;
+            font-size: 16px;
+            text-indent: 24px;
+           }
+
         .input-submit {
             background-color: #302d32;
             border: none;
@@ -102,10 +111,10 @@ footer {
         }
         &-footer {
             font-size: 16px;
-            padding-top: 20px;
-            margin: 0;
+            margin-top: 20px;
             color: $black;
             opacity: 0.5;
+            cursor: pointer;
         }
     }
     &-social {
@@ -114,13 +123,11 @@ footer {
     align-items: center;
     list-style-type: none;
     &__item {
-        padding-left: 30px;
-        padding-top: 8px;
+        padding-left: 27px;
     }
     
     &__vk {
-        background-image: url(../../../img/vk.svg);
-        background-size: 23px 18px;
+        background-image: url(../../../img/vk.png);
         background-color: $black;
         &:hover {
             background-color: $hover;
@@ -128,8 +135,7 @@ footer {
         }
     }
     &__inst {
-        background-image: url(../../../img/instagram.svg);
-        background-size: 18px 18px;
+        background-image: url(../../../img/instagram.png);
         background-color: $black;
         &:hover {
             border: 2px solid $hover;
@@ -137,8 +143,7 @@ footer {
         }
     }
     &__fb {
-        background-image: url(../../../img/facebook-2.svg);
-        background-size: 23px 18px;
+        background-image: url(../../../img/facebook-2.png);
         background-color: $black;
         &:hover {
             background-color: $hover;
@@ -162,7 +167,7 @@ footer {
 .footer-part-three {
     display: flex;
     justify-content: space-between;
-    padding-top: 47px;
+    padding-top: 28px;
     padding-bottom: 64px;
     &__copy {
         color: #979698;
