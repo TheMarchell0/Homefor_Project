@@ -15,8 +15,13 @@
     <div class="footer-part-two">
         <div class="input">
             <p class="input-title">Подпишись на рассылку</p>
-            <input type="text" placeholder="Ваш e-mail">
-            <button class="input-submit"><div class="input-submit__text">Отправить</div></button>
+            <div class="input-content">
+              <div class="field-with-error">
+                <input type="email" placeholder="Ваш e-mail">
+            <span class="form-error">Некорректный адрес e-mail</span>
+            </div>
+            <button class="input-submit"><div class="input-submit__text">Отправить</div></button>  
+            </div>
             <p class="input-footer">Согласие на обработку персональных данных.</p>
         </div>
         <ul class="footer-part-two-social">

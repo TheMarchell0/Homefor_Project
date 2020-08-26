@@ -64,6 +64,7 @@ input[type="range"]::-ms-fill-upper {
 .input-two {
     position: relative;
     width: 362px;
+    margin-left: 55px;
 }
 
 .zero-scale {
@@ -88,12 +89,111 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .section-filters {
+     select  {
+        text-align: center!important;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
     .input-fields {
         display: flex;
+        &-item {
+            padding-right: 30px;
+            &:last-child {
+                padding: 0;
+            }
+        }
+        .input-area {
+            display: flex;
+            margin-bottom: 26px;
+            .input-title {
+                margin: 0;
+                font-size: 1.33rem;
+                border-top: 1px solid $black;
+                border-left: 1px solid $black;
+                border-bottom: 1px solid $black;
+                width: 240px;
+                height: 56px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                &::after {
+                    content: "м2";
+                    display: inline-block;
+                    position: absolute;
+                    right: -200px;
+                }
+            }
+            input[type='number'] {
+                -moz-appearance:textfield;
+            }
+            
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            input {
+                width: 240px;
+                height: 54px;
+                font-size: 1.33rem;
+                text-align: center;
+                border: 1px solid $black;
+                &:focus {
+                    outline: none;
+                }
+                &::-webkit-input-placeholder {
+                    color: #c0c0c1;
+                    }
+            }
+        }
+        .input-price {
+            display: flex;
+            margin-bottom: 26px;
+            .input-title {
+                margin: 0;
+                font-size: 1.33rem;
+                border-top: 1px solid $black;
+                border-left: 1px solid $black;
+                border-bottom: 1px solid $black;
+                width: 240px;
+                height: 56px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                &::after {
+                    content: "тыс.";
+                    display: inline-block;
+                    position: absolute;
+                    right: -200px;
+                }
+            }
+            input[type='number'] {
+                -moz-appearance:textfield;
+            }
+            
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            input {
+                width: 240px;
+                height: 54px;
+                font-size: 1.33rem;
+                text-align: center;
+                border: 1px solid $black;
+                &:focus {
+                    outline: none;
+                }
+                &::-webkit-input-placeholder {
+                    color: #c0c0c1;
+                    }
+            }
+        }
     }
     .select-fields {
         padding-bottom: 30px;
@@ -106,6 +206,7 @@ input[type="range"]::-ms-fill-upper {
         font-size: 1.33rem;
         margin-right: -4px;
         border: 1px solid $black;
+        text-align-last: center;
         &:active {
             border: 1px solid $hover;
         }
@@ -1126,14 +1227,65 @@ input[type="range"]::-ms-fill-upper {
         margin: 0;
     }
     .slider-two {
-        display: flex;
-        justify-content: space-between;
+        .slick-slide img {
+            display: inline-block;
+        }
+        
+        .slick-prev,
+        .slick-next {
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            top: -38px;
+            text-indent: -9999px;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            transition: 0.2s ease;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .slick-prev {
+            right: 48px;
+            background-image: url(../img/previous-arrow.png);
+            border-top: 1px solid black;
+            background-position: center center;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            padding-top: 11px;
+            padding-bottom: 1px;
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+
+        .slick-next {
+            right: 0;
+            background-image: url(../img/next-arrow.png);
+            border-top: 1px solid black;
+            background-position: center center;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            padding-top: 11px;
+            padding-bottom: 1px;
+            padding-left: 13px;
+            padding-right: 13px;
+        }
         &__child {
             width: 463px;
             height: 399px;
             border: 1px solid black;
             overflow: hidden;
             position: relative;
+            margin-left: 14px;
+            margin-right: 14px;
+            margin-top: 19px;
             &:hover {
                 .see-more-link {
                     color: $white;

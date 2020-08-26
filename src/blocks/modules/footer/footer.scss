@@ -67,6 +67,9 @@ footer {
             padding-bottom: 9px;
             padding-top: 9px;
         }
+        &-content {
+            display: flex;
+        }
         input {
             width: 530px;
             height: 54px;
@@ -81,8 +84,30 @@ footer {
                 font-size: 16px;
                 padding-top: 9px;
             }
+            &:invalid:not(:placeholder-shown) {
+                border-color: #f61c1d;
+            }
+            &:invalid:not(:placeholder-shown) {
+                border: 1px solid #f22149;
+            }
+            &:invalid:not(:placeholder-shown) + .form-error {
+                opacity: 1;
+            }
         }
-        INPUT[type="text"] {
+        .field-with-error {
+            display: flex;
+            flex-direction: column;
+            .form-error {
+                text-align: left;
+                margin-top: 4px;
+                opacity: 0;
+                font-size: 14px;
+                line-height: 150%;
+                color: #f61c1d;
+                transition: 0.2s ease; 
+            }
+        }
+        INPUT[type="email"] {
             color: $black;
             font-size: 16px;
             text-indent: 24px;
