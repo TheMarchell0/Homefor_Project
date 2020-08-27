@@ -45,7 +45,7 @@ footer {
     .footer-tel {
         text-decoration: none;
         color: $black;
-        font-size: 34px;
+        font-size: 2.83rem;
         font-weight: bold;
         transition: 0.2s ease;
         &:hover {
@@ -60,7 +60,7 @@ footer {
     justify-content: space-between;
     .input {
         &-title {
-            font-size: 16px;
+            font-size: 1.33rem;
             line-height: 24px;
             color: $black;
             margin: 0;
@@ -81,7 +81,7 @@ footer {
             }
             &::-webkit-input-placeholder {
                 color: #c0c3c6;
-                font-size: 16px;
+                font-size: 1.33rem;
                 padding-top: 9px;
             }
             &:invalid:not(:placeholder-shown) {
@@ -101,7 +101,7 @@ footer {
                 text-align: left;
                 margin-top: 4px;
                 opacity: 0;
-                font-size: 14px;
+                font-size: 1.16rem;
                 line-height: 150%;
                 color: #f61c1d;
                 transition: 0.2s ease; 
@@ -109,7 +109,7 @@ footer {
         }
         INPUT[type="email"] {
             color: $black;
-            font-size: 16px;
+            font-size: 1.33rem;
             text-indent: 24px;
            }
 
@@ -123,7 +123,7 @@ footer {
             letter-spacing: 3px;
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 1.5rem;
             transition: 0.2s ease;
             cursor: pointer;
             &:hover {
@@ -135,8 +135,8 @@ footer {
             }
         }
         &-footer {
-            font-size: 16px;
-            margin-top: 20px;
+            font-size: 1.33rem;
+            margin: 0;
             color: $black;
             opacity: 0.5;
             cursor: pointer;
@@ -192,8 +192,8 @@ footer {
 .footer-part-three {
     display: flex;
     justify-content: space-between;
-    padding-top: 28px;
-    padding-bottom: 64px;
+    padding-top: 41px;
+    padding-bottom: 52px;
     &__copy {
         color: #979698;
     }

@@ -52,7 +52,10 @@
                 <div class="input-fields-item">
                     <div class="input-area">
                         <p class="input-title">Площадь</p>
-                    <input type="number"  min="0" max="1000" placeholder="__________">
+                        <div class="field-with-error">
+                          <input type="number"  min="0" max="1000" placeholder="__________">
+                    <span class="form-error">Некорректное число</span>  
+                        </div>
                     </div>
                     <div class="input-one">
                         <p class="zero-scale">0</p>
@@ -71,6 +74,16 @@
                         <div class="square"></div>
                         <input type="range" min="0" max="98000" step="1" value="45000"> 
                         <p class="final-scale">98000</p>
+                    </div>
+                </div>
+            </div>
+                <div class="section-filters__buttons">
+                    <div class="button-one">
+                        <button class="button-one__item">Сбросить фильтры</button>
+                        <img src="../img/close.png" alt="">
+                    </div>
+                    <div class="button-two">
+                        <button class="button_show">Показать</button>
                     </div>
                 </div>
         </section>
