@@ -42,6 +42,21 @@
     position: absolute;
     top: 0;
     left: 12.5%;
+    @media (max-width: 1720px) {
+        left: 5.5%;
+    }
+    @media (max-width: 1550px) {
+        left: 2.3%;
+    }
+    @media (max-width: 1315px) {
+       padding-top: 20px;
+       padding-bottom: 20px;
+       padding-left: 25px;
+       padding-right: 25px;
+    }
+    @media (max-width: 1157px) {
+        left: 0.3%;
+    }
     padding-top: 32px;
     padding-bottom: 37px;
     background-color: $black;
@@ -53,6 +68,12 @@
     position: absolute;
     top: 4.5%;
     left: 25.3%;
+    @media (max-width: 1720px) {
+        left: 21.3%;
+    }
+    @media (max-width: 1550px) {
+        left: 19.3%;
+    }
     cursor: pointer;
 
     .burger-one {
@@ -60,6 +81,9 @@
         width: 40px;
         height: 1px;
         margin-bottom: 8px;
+        @media (max-width: 1193px) {
+            width: 25px;
+        }
     }
 
     .burger-two {
@@ -67,12 +91,20 @@
         width: 25px;
         height: 1px;
         margin-bottom: 8px;
+        @media (max-width: 1193px) {
+            left: 25.5%;
+            width: 15px;
+        }
     }
 
     .burger-three {
         background-color: white;
         width: 40px;
         height: 1px;
+        @media (max-width: 1193px) {
+            left: 25.5%;
+            width: 25px;
+        }
     }
 
     &:hover {
@@ -98,11 +130,23 @@
     position: absolute;
     top: 3.7%;
     left: 31.6%;
+    @media (max-width: 1720px) {
+        left: 28.6%;
+    }
+    @media (max-width: 1550px) {
+        left: 24.6%;
+    }
     .nav {
         display: flex;
         .nav-item {
             padding-right: 50px;
             list-style-type: none;
+            @media (max-width: 1193px) {
+                padding-right: 41px;
+            }
+            @media (max-width: 1076px) {
+                padding-right: 22px;
+            }
             &:last-child {
                 padding-right: 0;
             }
@@ -113,6 +157,12 @@
             color: $white;
             line-height: 24px;
             transition: 0.2s ease;
+            @media (max-width: 1720px) {
+                font-size: 1.21rem;
+            }
+            @media (max-width: 1076px) {
+                font-size: 1.2rem;
+            }
             &:hover {
                 color: $hover;
             }
@@ -126,6 +176,18 @@
     top: 1.8%;
     right: 12.1%;
     align-items: center;
+    @media (max-width: 1720px) {
+        top: 1.2%;
+    }
+    @media (max-width: 1381px) {
+        right: 4.1%;
+    }
+    @media (max-width: 1115px) {
+        right: 1.1%;
+    }
+    @media (max-width: 1076px) {
+        right: 1.1%;
+    }
 
     .header-location {
         padding-right: 61px;
@@ -134,6 +196,12 @@
         font-size: 1.33rem;
         font-weight: bold;
         display: flex;
+        @media (max-width: 1720px) {
+            font-size: 1.21rem;
+        }
+        @media (max-width: 1208px) {
+            font-size: 1.1rem;
+        }
         &:before {
             content: "";
             display: block;
@@ -154,6 +222,9 @@
         font-weight: bold;
         display: flex;
         transition: 0.2s ease;
+        @media (max-width: 1208px) {
+            font-size: 1.1rem;
+        }
         &:hover {
             color: $hover;
         }
@@ -175,6 +246,22 @@
     position: absolute;
     top: 31%;
     left: 28.5%;
+    @media (max-width: 1720px) {
+        left: 26.5%;
+    }
+    @media (max-width: 1440px) {
+        top: 24%;
+    }
+    @media (max-width: 1286px) {
+        top: 20%;
+    }
+    @media (max-width: 1193px) {
+        left: 25.5%;
+    }
+    @media (max-width: 1157px) {
+        left: 29.5%;
+    }
+    
     display: flex;
     flex-direction: column;
 }
@@ -185,6 +272,20 @@
     text-align: center;
     line-height: 70px;
     padding-bottom: 16px;
+    @media (max-width: 1550px) {
+        font-size: 4.5rem;
+    }
+    @media (max-width: 1465px) {
+        font-size: 4.2rem;
+    }
+    @media (max-width: 1193px) {
+        font-size: 3.7rem;;
+    }
+    @media (max-width: 1157px) {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+
 }
 
 .header-description {
@@ -194,6 +295,9 @@
     text-align: center;
     line-height: 24px;
     padding-bottom: 46px;
+    @media (max-width: 1720px) {
+        padding-bottom: 32px;
+    }
 }
 
 .header-button {
@@ -210,6 +314,11 @@
     letter-spacing: 3px;
     transition: 0.2s ease;
     align-self: center;
+    @media (max-width: 1286px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.4rem;
+    }
     &:hover {
         color: $hover;
     }

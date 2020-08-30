@@ -1,13 +1,12 @@
 footer {
     border-top: 1px solid #4c494d;
+    padding: 0 15px 0 15px;
 }
 
 .wrapper {
     width: 100%;
     max-width: 1430px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .footer-part-one {
@@ -22,7 +21,6 @@ footer {
     padding-top: 12px;
     .nav {
         display: flex;
-        margin-right: 375px;
         .nav-item {
             padding-right: 48px;
             list-style-type: none;
@@ -48,6 +46,35 @@ footer {
         font-size: 2.83rem;
         font-weight: bold;
         transition: 0.2s ease;
+        white-space: nowrap;
+        margin-left: 379px;
+        @media (max-width: 1465px) {
+            margin-left: 20%;
+        }
+        @media (max-width: 1344px) {
+            margin-left: 18%;
+        }
+        @media (max-width: 1315px) {
+            margin-left: 16%;
+        }
+        @media (max-width: 1279px) {
+            margin-left: 14%;
+        }
+        @media (max-width: 1260px) {
+            margin-left: 12%;
+        }
+        @media (max-width: 1226px) {
+            margin-left: 10%;
+        }
+        @media (max-width: 1208px) {
+            margin-left: 7%;
+        }
+        @media (max-width: 1160px) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: 1122px) {
+            font-size: 2.2rem;
+        }
         &:hover {
             color: $hover;
         }
@@ -73,6 +100,9 @@ footer {
         input {
             width: 530px;
             height: 54px;
+            @media (max-width: 1212px) {
+                width: 467px;
+            }
             transition: 0.2s ease;
             border: 1px solid $black;
             &:focus {

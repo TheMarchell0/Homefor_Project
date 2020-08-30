@@ -14,12 +14,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .wrapper {
     width: 100%;
     max-width: 1430px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 input[type='range'] {
@@ -228,6 +231,9 @@ input[type="range"]::-ms-fill-upper {
         margin-right: -4px;
         border: 1px solid $black;
         text-align-last: center;
+        @media (max-width: 1193px) {
+            width: 270px;
+        }
         &:active {
             border: 1px solid $hover;
         }
@@ -299,7 +305,7 @@ input[type="range"]::-ms-fill-upper {
     }
 
     &__line {
-        width: 1309px;
+        width: 92%;
         height: 1px;
         background-color: #c0c0c1;
         margin-bottom: 23px;
@@ -307,6 +313,12 @@ input[type="range"]::-ms-fill-upper {
     
 
     .slider-one {
+        .like {
+            margin-right: 17px;
+            @media (max-width: 1313px) {
+                margin-left: 2%;
+            }
+        }
         .slick-prev,
         .slick-next {
             display: block;
@@ -358,7 +370,7 @@ input[type="range"]::-ms-fill-upper {
             height: 18px;
         }
         &__item {
-            padding: 20px;
+            padding: 10px;
             box-sizing: border-box;
             position: relative;
         }
@@ -398,6 +410,9 @@ input[type="range"]::-ms-fill-upper {
                 font-size: 2.5rem;
                 color: white;
                 font-weight: bold;
+                @media (max-width: 1130px) {
+                    font-size: 2rem;
+                }
             }
             &__description {
                 color: white;
@@ -405,6 +420,9 @@ input[type="range"]::-ms-fill-upper {
                 line-height: 24px;
                 padding-top: 10px;
                 margin: 0;
+                @media (max-width: 1130px) {
+                    font-size: 1.2rem;
+                }
             }
         }
         &-main-second {
@@ -417,6 +435,9 @@ input[type="range"]::-ms-fill-upper {
             &__item {
                 margin-left: 32px;
                 margin-bottom: 41px;
+                @media (max-width: 1379px) {
+                    margin-left: 19px;
+                }
                 .like {
                     background-color: #302d32;
                     padding-top: 32px;
@@ -443,6 +464,9 @@ input[type="range"]::-ms-fill-upper {
                 font-size: 2.5rem;
                 color: white;
                 font-weight: bold;
+                @media (max-width: 1130px) {
+                    font-size: 2rem;
+                }
             }
             &__description {
                 color: white;
@@ -450,6 +474,9 @@ input[type="range"]::-ms-fill-upper {
                 line-height: 24px;
                 padding-top: 10px;
                 margin: 0;
+                @media (max-width: 1130px) {
+                    font-size: 1.2rem;
+                }
             }
         }
         &-main-third {
@@ -462,6 +489,10 @@ input[type="range"]::-ms-fill-upper {
             &__item {
                 margin-left: 32px;
                 margin-bottom: 41px;
+                @media (max-width: 1424px) {
+                    margin-left: 19px;
+                }
+                
                 .like {
                     background-color: #302d32;
                     padding-top: 32px;
@@ -478,6 +509,9 @@ input[type="range"]::-ms-fill-upper {
                     height: 15px;
                     outline: none;
                     border: none;
+                    @media (max-width: 1358px) {
+                        margin-left: 79px;
+                    }
                     &:focus {
                         background-color: $hover;
                     }
@@ -488,6 +522,9 @@ input[type="range"]::-ms-fill-upper {
                 font-size: 2.5rem;
                 color: white;
                 font-weight: bold;
+                @media (max-width: 1130px) {
+                    font-size: 2rem;
+                }
             }
             &__description {
                 color: white;
@@ -495,6 +532,9 @@ input[type="range"]::-ms-fill-upper {
                 line-height: 24px;
                 padding-top: 10px;
                 margin: 0;
+                @media (max-width: 1130px) {
+                    font-size: 1.2rem;
+                }
             }
         }
         &-info {
@@ -508,6 +548,9 @@ input[type="range"]::-ms-fill-upper {
                     font-size: 1.33rem;
                     line-height: 24px;
                     margin-bottom: 0;
+                    @media (max-width: 1212px) {
+                        font-size: 1rem;
+                    }
                 }
                 .text-one {
                     padding-left: 10px;
@@ -524,7 +567,6 @@ input[type="range"]::-ms-fill-upper {
             }
         }
         &__child {
-            width: 454px;
             height: 545px;
             border: 1px solid black;
         }
@@ -535,6 +577,9 @@ input[type="range"]::-ms-fill-upper {
             margin: 0;
             padding-left: 33px;
             padding-top: 7px;
+            @media (max-width: 1212px) {
+                font-size: 2rem;
+            }
         }
     }
 }
@@ -559,7 +604,7 @@ input[type="range"]::-ms-fill-upper {
     }
     .catalog {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         padding-bottom: 51px;
@@ -892,6 +937,9 @@ input[type="range"]::-ms-fill-upper {
                 margin: 0;
                 padding-left: 33px;
                 padding-top: 7px;
+                @media (max-width: 1286px) {
+                    padding-top: 0;
+                }
             }
         }
     }
@@ -984,8 +1032,8 @@ input[type="range"]::-ms-fill-upper {
     &-one {
         width: 181px;
         height: 116px;
-        left: 256px;
-        top: 200px;
+        left: 13%;
+        top: 33%;
         position: absolute;
         display: inline-block;
         transition: 0.2s ease;
@@ -1024,8 +1072,8 @@ input[type="range"]::-ms-fill-upper {
         position: absolute;
         width: 257px;
         height: 192px;
-        left: 394px;
-        top: 407px;
+        left: 23%;
+        top: 65%;
         display: inline-block;
         transition: 0.2s ease;
         cursor: pointer;
@@ -1070,8 +1118,8 @@ input[type="range"]::-ms-fill-upper {
         position: absolute;
         width: 171px;
         height: 76px;
-        left: 880px;
-        top: 92px;
+        left: 50%;
+        top: 14%;
         display: inline-block;
         transition: 0.2s ease;
         cursor: pointer;
@@ -1108,8 +1156,8 @@ input[type="range"]::-ms-fill-upper {
         position: absolute;
         width: 266px;
         height: 154px;
-        left: 1130px;
-        top: 121px;
+        left: 66%;
+        top: 20%;
         display: inline-block;
         transition: 0.2s ease;
         cursor: pointer;
@@ -1146,8 +1194,8 @@ input[type="range"]::-ms-fill-upper {
         position: absolute;
         width: 205px;
         height: 104px;
-        right: 184px;
-        top: 67px;
+        right: 9%;
+        top: 10%;
         display: inline-block;
         transition: 0.2s ease;
         cursor: pointer;
@@ -1260,12 +1308,21 @@ input[type="range"]::-ms-fill-upper {
     .item-one {
         padding-right: 181px;
         padding-left: 135px;
+        @media (max-width: 1248px) {
+            padding-left: 36px;
+        }
+        @media (max-width: 1286px) {
+            padding-left: 64px;
+        }
     }
     .item-two {
         padding-right: 182px;
     }
     .item-three {
         padding-right: 196px;
+        @media (max-width: 1122px) {
+            padding-right: 137px;
+        }
     }
 }
 
@@ -1369,10 +1426,18 @@ input[type="range"]::-ms-fill-upper {
             &-content {
                 position: absolute;
                 overflow: hidden;
-                width: 463px;
                 height: 399px;
                 padding-top: 167px;
                 padding-left: 28px;
+                @media (max-width: 1286px) {
+                    padding-top: 138px;
+                }
+                @media (max-width: 1268px) {
+                    padding-top: 107px;
+                }
+                @media (max-width: 1268px) {
+                    padding-top: 73px;
+                }
             }
             .news-date {
                 margin: 0;
