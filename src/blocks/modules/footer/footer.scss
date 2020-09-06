@@ -14,8 +14,17 @@ footer {
     padding-top: 59px;
     align-items: center;
     padding-bottom: 19px;
+    @media (max-width: 840px) {
+        flex-direction: column;
+    }
     img {
         margin-right: 103px;
+        @media (max-width: 1093px) {
+            margin-right: 38px;
+        }
+        @media (max-width: 840px) {
+            margin-bottom: 17px;
+        }
     }
    .footer-menu {
     padding-top: 12px;
@@ -27,6 +36,9 @@ footer {
             &:last-child {
                 padding-right: 0;
             }
+            @media (max-width: 880px) {
+                padding-right: 27px;
+            }
         }
         .nav-link {
             font-size: 1.33rem;
@@ -36,6 +48,9 @@ footer {
             transition: 0.2s ease;
             &:hover {
                 color: $hover;
+            }
+            @media (max-width: 1000px) {
+                font-size: 1.2rem;
             }
         }
     }
@@ -75,6 +90,19 @@ footer {
         @media (max-width: 1122px) {
             font-size: 2.2rem;
         }
+        @media (max-width: 1093px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 1000px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 917px) {
+            margin-left: 4%;
+        }
+        @media (max-width: 840px) {
+            padding-top: 25px;
+            margin-left: 0;
+        }
         &:hover {
             color: $hover;
         }
@@ -85,6 +113,11 @@ footer {
 .footer-part-two {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 859px) {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+     }
     .input {
         &-title {
             font-size: 1.33rem;
@@ -102,6 +135,9 @@ footer {
             height: 54px;
             @media (max-width: 1212px) {
                 width: 467px;
+            }
+            @media (max-width: 1000px) {
+                width: 352px;
             }
             transition: 0.2s ease;
             border: 1px solid $black;
@@ -170,9 +206,16 @@ footer {
             color: $black;
             opacity: 0.5;
             cursor: pointer;
+            @media (max-width: 859px) {
+                display: flex;
+                justify-content: center;
+             }
         }
     }
     &-social {
+        @media (max-width: 859px) {
+           padding-top: 50px;
+        }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -220,6 +263,10 @@ footer {
 }
 
 .footer-part-three {
+    @media (max-width: 580px) {
+        flex-direction: column;
+        align-items: center;
+     }
     display: flex;
     justify-content: space-between;
     padding-top: 41px;
