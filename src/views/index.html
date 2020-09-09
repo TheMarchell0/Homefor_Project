@@ -80,7 +80,7 @@
             </div>
                 <div class="section-filters__buttons">
                     <div class="button-one">
-                        <button class="button-one__item">Сбросить фильтры</button>
+                        <button class="button-one__item">Сбросить фильтры&nbsp;</button>
                         <img src="../img/close.png" alt="">
                     </div>
                     <div class="button-two">
@@ -536,6 +536,14 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script>
             $('.slider').slick({
+                dots: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+            });
+        </script>
+        <script>
+            $('.slider-mobile').slick({
                 dots: true,
                 infinite: true,
                 autoplay: true,

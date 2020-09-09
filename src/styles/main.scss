@@ -280,6 +280,9 @@ input[type="range"]::-ms-fill-upper {
                 padding-left: 50px;
                 cursor: pointer;
                 transition: 0.2s ease;
+                &:focus {
+                    outline: none;
+                }
                 &:hover {
                     color: $hover;
                 }
@@ -300,6 +303,9 @@ input[type="range"]::-ms-fill-upper {
                 font-size: 1.5rem;
                 transition: 0.2s ease;
                 cursor: pointer;
+                &:focus {
+                    outline: none;
+                }
                 &:hover {
                     background-color: $hover;
                 }
@@ -1065,8 +1071,16 @@ input[type="range"]::-ms-fill-upper {
             margin-right: 60px;
             margin-left: 60px;
             margin-bottom: 34px;
+            @media (max-width: 790px) {
+                font-size: 1.2rem;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
             &:first-child {
                 margin-left: 104px;
+                @media (max-width: 790px) {
+                    margin-left: 0;
+                }
             }
             &:focus {
                 opacity: 1;
