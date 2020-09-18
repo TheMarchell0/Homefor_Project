@@ -334,8 +334,8 @@
                 </div>
                 <p class="catalog-item-price">6 120 412 500 ₽</p>
                 </div>
-                <div class="catalog-item">
-                    <div class="catalog-item-main-four">
+                <div class="catalog-item mobile_display_none">
+                      <div class="catalog-item-main-four">
                         <div class="catalog-item-main-four__item">
                         <p class="catalog-item-main-four__title">Дом “Пионер”</p>
                         <p class="catalog-item-main-four__description">ул. Карла Маркса, 120, Екатеринбург</p>
@@ -353,9 +353,9 @@
                     </div>
                 </div>
                 <p class="catalog-item-price">3 120 000 500 ₽</p>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item-main-five">
+                </div>    
+                <div class="catalog-item mobile_display_none">
+                      <div class="catalog-item-main-five">
                         <div class="catalog-item-main-five__item">
                         <p class="catalog-item-main-five__title">Дом “Манхетен”</p>
                         <p class="catalog-item-main-five__description">ул. Московская, 10, Екатеринбург</p>
@@ -373,9 +373,9 @@
                     </div>
                 </div>
                 <p class="catalog-item-price">6 000 456 000 ₽</p>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item-main-six">
+                </div>  
+                <div class="catalog-item mobile_display_none">
+                       <div class="catalog-item-main-six">
                         <div class="catalog-item-main-six__item">
                         <p class="catalog-item-main-six__title">Дом “Дружба”</p>
                         <p class="catalog-item-main-six__description">ул. Прашина, 60, Екатеринбург</p>
@@ -393,7 +393,7 @@
                     </div>
                 </div>
                 <p class="catalog-item-price">4 012 400 500 ₽</p>
-                </div>
+                </div> 
             </div>
             <div class="see-more-button">
                 <a class="see-more-link" href="#">Смотреть больше</a>
@@ -413,6 +413,7 @@
                 </div>
             </div>
         </div>
+    </main>
         <div class="plan">
             <div class="plan-one"><p class="plan-one__text">Дом 23</p></div>
             <div class="plan-two"><div class="plan-two__text">Дом 56<br><p class="text-description">Вы можете приобрести<br>10 567 457руб</p></div></div>
@@ -421,6 +422,7 @@
             <div class="plan-five"><p class="plan-five__text">Школа №27</p></div>
         </div>
         </section>
+        <main>
         <div class="wrapper">
             <section class="section-about-company">
                 <div class="section-about-company__title">
@@ -457,7 +459,7 @@
                     <div class="background-image"></div>
                     <div class="slider-two__child-content">
                         <p class="news-date">02.04.2020</p>
-                        <p class="news-description">В 2018 году происходили изменения в главном<br>законе долевого строительства ФЗ-214 для<br>решения с ложной задачи - строительства 120<br>млн квадратных метров жилья нового качества<br>и усиления контроля</p>
+                        <p class="news-description">В 2018 году происходили изменения в главном законе долевого строительства ФЗ-214 для решения с ложной задачи - строительства 120 млн квадратных метров жилья нового качества и усиления контроля</p>
                         <div class="see-more-button">
                             <a class="see-more-link" href="#">Смотреть больше</a>
                             <img src="../img/see-more-arrow.png" alt="see-more-arrow">
@@ -570,6 +572,15 @@
     },
     {
       breakpoint: 805,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 350,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
