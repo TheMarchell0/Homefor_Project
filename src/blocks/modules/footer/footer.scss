@@ -17,7 +17,7 @@ footer {
     @media (max-width: 840px) {
         flex-direction: column;
     }
-    @media (max-width: 350px) {
+    @media (max-width: 499px) {
         padding-top: 32px;
     }
     img {
@@ -28,7 +28,7 @@ footer {
         @media (max-width: 840px) {
             margin-bottom: 17px;
         }
-        @media (max-width: 350px) {
+        @media (max-width: 499px) {
             width: 98px;
             margin-right: 8px;
         }
@@ -37,7 +37,7 @@ footer {
     padding-top: 12px;
     .nav {
         display: flex;
-        @media (max-width: 350px) {
+        @media (max-width: 499px) {
             flex-wrap: wrap;
             text-align: center;
             justify-content: space-around;
@@ -47,7 +47,7 @@ footer {
         .nav-item {
             padding-right: 48px;
             list-style-type: none;
-            @media (max-width: 350px) {
+            @media (max-width: 499px) {
                 padding-right: 0;
                 flex: 0 0 50%;
             }
@@ -64,7 +64,7 @@ footer {
             color: $black;
             line-height: 24px;
             transition: 0.2s ease;
-            @media (max-width: 350px) {
+            @media (max-width: 499px) {
                 font-size: 1rem;
                 line-height: 18px;
             }
@@ -125,7 +125,7 @@ footer {
             padding-top: 25px;
             margin-left: 0;
         }
-        @media (max-width: 350px) {
+        @media (max-width: 499px) {
             padding-top: 19px;
         }
         &:hover {
@@ -154,7 +154,7 @@ footer {
             @media (max-width: 620px) {
                 text-align: center;
              }
-            @media (max-width: 350px) {
+            @media (max-width: 499px) {
                 font-size: 1rem;
                 line-height: 18px;
              }
@@ -175,7 +175,7 @@ footer {
             @media (max-width: 1000px) {
                 width: 352px;
             }
-            @media (max-width: 350px) {
+            @media (max-width: 499px) {
                 width: 281px;
                 height: 46px;
             }
@@ -189,7 +189,7 @@ footer {
                 color: #c0c3c6;
                 font-size: 1.33rem;
                 padding-top: 9px;
-                @media (max-width: 350px) {
+                @media (max-width: 499px) {
                     font-size: 1rem;
                     line-height: 18px;
                     text-indent: 15px;
@@ -237,7 +237,7 @@ footer {
             font-size: 1.5rem;
             transition: 0.2s ease;
             cursor: pointer;
-            @media (max-width: 350px) {
+            @media (max-width: 499px) {
                 font-size: 1.16rem;
                 letter-spacing: 2px;
                 width: 170px;
@@ -253,7 +253,7 @@ footer {
             &__text {
                 padding-top: 6px;
                 padding-bottom: 10px;
-                @media (max-width: 350px) {
+                @media (max-width: 499px) {
                     padding-top: 0;
                     padding-bottom: 0;
                 }
@@ -269,7 +269,7 @@ footer {
                 display: flex;
                 justify-content: center;
              }
-             @media (max-width: 350px) {
+             @media (max-width: 499px) {
                 font-size: 1rem;
                 line-height: 18px;
              }
@@ -279,7 +279,7 @@ footer {
         @media (max-width: 859px) {
            padding-top: 50px;
         }
-        @media (max-width: 350px) {
+        @media (max-width: 499px) {
             padding-top: 37px;
             width: 211px;
         }
@@ -289,7 +289,7 @@ footer {
     list-style-type: none;
     &__item {
         padding-left: 27px;
-        @media (max-width: 350px) {
+        @media (max-width: 499px) {
             padding-left: 0;
         }
     }
@@ -341,7 +341,7 @@ footer {
         flex-direction: column;
         align-items: center;
      }
-    @media (max-width: 350px) {
+    @media (max-width: 499px) {
         padding-top: 24px;
     }
     &__copy {
